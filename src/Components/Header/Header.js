@@ -11,9 +11,7 @@ const Header = () => {
                 <Navbar.Collapse id="responsive-navbar-nav" className="d-flex-lg justify-content-end">
                     <Nav>
                         <Nav.Link as={HashLink} to="/home">Home</Nav.Link>
-                        <Nav.Link as={HashLink} to="#memes">
-                            Dank memes
-                        </Nav.Link>
+                        <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
