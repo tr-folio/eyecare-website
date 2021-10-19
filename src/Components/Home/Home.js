@@ -9,7 +9,8 @@ import Footer from "../Footer/Footer";
 import useFakeServicesDb from "../../Hooks/useFakeServicesDb";
 
 const Home = () => {
-    const services = useFakeServicesDb([]);
+    const services = useFakeServicesDb();
+    console.log(typeof services);
     return (
         <>
             {/* Top Banner Section */}

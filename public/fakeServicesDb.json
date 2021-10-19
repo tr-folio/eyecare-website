@@ -1,38 +1,38 @@
 [
     {
-        "id": 1,
-        "serviceName": "Medical Eye Care",
-        "description": "Are you facing any vision problem? Come to us before it's too late. Most of the eye diseases can be cured completely at early stages if you take proper steps.",
-        "img": "https://images.unsplash.com/photo-1575278617117-86484b220657?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTZ8fGhvc3BpdGFsfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+      "id": 1,
+      "servicename": "Medical Eye Care",
+      "description": "Are you facing any vision problem? Come to us before it's too late. Most of the eye diseases can be cured completely at early stages if you take proper steps.",
+      "img": "https://images.unsplash.com/photo-1575278617117-86484b220657?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTZ8fGhvc3BpdGFsfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     },
     {
         "id": 2,
-        "serviceName": "Eye Diseases Prevention",
+        "servicename": "Eye Diseases Prevention",
         "description": "Prevention is better than cure. Our doctors regularly gives suggessions about common eye related problems. Because, some eye diseases gives little signs at early stages but becomes harder to treat later.",
         "img": "https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA0fHxob3NwaXRhbHxlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     },
     {
         "id": 3,
-        "serviceName": "Surgical Eye Care",
+        "servicename": "Surgical Eye Care",
         "description": "Our doctors are professional and experienced with modern instruments and techniques. Our eye surgery includes Cataract Surgery, Laser Treatment, Lens Implantats and so on. Visit our surgical doctors.",
         "img": "https://images.unsplash.com/photo-1551601651-bc60f254d532?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
     },
     {
         "id": 4,
-        "serviceName": "Eye Exams",
+        "servicename": "Eye Exams",
         "description": "Eye exams are important to understand your eye related problem. Visit our doctors. Our doctors with their technician team will take your exams.",
         "img": "https://images.unsplash.com/photo-1613796434552-319eb4997874?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fG1lZGljYWwlMjBzZXJ2aWNlc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     },
     {
         "id": 5,
-        "serviceName": "Vision Problems by Other Diseases",
+        "servicename": "Vision Problems by Other Diseases",
         "description": "Sometimes you might have faced vision problems without any eye problems because of other deseases such as diabetes. In such as a case, visit our doctors immediately.",
         "img": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG1lZGljYWwlMjBzZXJ2aWNlc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     },
     {
         "id": 6,
-        "serviceName": "Eye Glasses",
+        "servicename": "Eye Glasses",
         "description": "Our optical shop will make your eye glasses according to doctor's suggestion. You can choose your favourite frame from our hundreds of frames collection. Come to our optical shop now.",
         "img": "https://images.unsplash.com/photo-1551910021-c59ed3bf006b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZXllZ2xhc3Nlc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     }
-]
+  ]
