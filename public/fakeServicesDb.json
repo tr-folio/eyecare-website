@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "serviceName": "Medical Eye Care",
+        "description": "small description lore ipsum",
+        "img": ""
+    },
+    {
+        "id": 2,
+        "serviceName": "Eye Diseases Prevention",
+        "description": "small description lore ipsum",
+        "img": ""
+    },
+    {
+        "id": 3,
+        "serviceName": "Surgical Eye Care",
+        "description": "small description lore ipsum",
+        "img": ""
+    },
+    {
+        "id": 4,
+        "serviceName": "Eye Exams",
+        "description": "small description lore ipsum",
+        "img": ""
+    },
+    {
+        "id": 5,
+        "serviceName": "Vision Problems by Other Diseases",
+        "description": "small description lore ipsum",
+        "img": ""
+    },
+    {
+        "id": 6,
+        "serviceName": "Eye Glasses",
+        "description": "small description lore ipsum",
+        "img": ""
+    }
+]

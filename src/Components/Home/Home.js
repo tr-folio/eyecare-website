@@ -4,9 +4,13 @@ import './Home.css';
 import img1 from "../../Images/img1.jpg";
 import img2 from "../../Images/img2.jpg";
 import img3 from "../../Images/img3.jpg";
+import useFakeServiceDb from "../../Hooks/useFakeServicesDb";
+import Service from "../Service/Service";
 
 const Home = () => {
+    const services = useFakeServiceDb([]);
     return (
+        <>
         <Carousel>
             <Carousel.Item interval={1000}>
                 <img
@@ -42,6 +46,16 @@ const Home = () => {
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
+        <div className="bg-light">
+            <h1>Services</h1>
+            {
+                services.map(service => <Service 
+                    key={service.id}
+                    service={service}
+                ></Service>)
+            }
+        </div>
+        </>
     );
 }
 
