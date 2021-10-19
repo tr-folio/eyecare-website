@@ -4,10 +4,12 @@ import {
   Route
 } from 'react-router-dom';
 import './App.css';
+import ConfirmVisit from './Components/ConfirmVisit/ConfirmVisit';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 import NotFound from './Components/NotFound/NotFound';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import ServiceDetail from './Components/ServiceDetail/ServiceDetail';
 import Signup from './Components/Signup/Signup';
 import AuthProvider from './Context/AuthProvider';
@@ -22,9 +24,12 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/serviceDetail">
+            <PrivateRoute path="/serviceDetail">
               <ServiceDetail></ServiceDetail>
-            </Route>
+            </PrivateRoute>
+            <PrivateRoute path="/confirmVisit">
+              <ConfirmVisit></ConfirmVisit>
+            </PrivateRoute>
             <Route path="/login">
               <Login></Login>
             </Route>
