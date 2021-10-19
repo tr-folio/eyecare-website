@@ -1,10 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useHistory } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 import './Login.css';
 
 const Login = () => {
     const { signInUsingGoogle } = useAuth();
+    const location = useLocation();
+    const history = useHistory();
+    const redirectUrl = location.state?.from || '/home';
+    const handleGoogleLogin = () => {
+        signInUsingGoogle()
+        .then(result => {
+            history.push(redirectUrl);
+        })
+    }
     return (
         <div className="login-container d-flex justify-content-center">
             <div className="pt-5">
@@ -20,7 +29,7 @@ const Login = () => {
                 <hr/>
                 <h3>Google Login</h3>
                 <div>
-                    <button className="btn btn-primary" onClick={signInUsingGoogle}>Login with Google</button>
+                    <button className="btn btn-primary" onClick={handleGoogleLogin}>Login with Google</button>
                 </div>
                 <hr/>
                 <div className="login-toggler">

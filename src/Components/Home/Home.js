@@ -21,8 +21,8 @@ const Home = () => {
                     alt="First slide"
                     />
                     <Carousel.Caption>
-                    <h3 className="d-sm-none">First slide label</h3>
-                    <p  className="d-sm-none">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h3 className="d-sm-none d-lg-block">First slide label</h3>
+                    <p  className="d-sm-none d-lg-block">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={2000}>
@@ -32,8 +32,8 @@ const Home = () => {
                     alt="Second slide"
                     />
                     <Carousel.Caption>
-                    <h3  className="d-sm-none">Second slide label</h3>
-                    <p  className="d-sm-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3  className="d-sm-none d-lg-block">Second slide label</h3>
+                    <p  className="d-sm-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={2000}>
@@ -43,8 +43,8 @@ const Home = () => {
                     alt="Third slide"
                     />
                     <Carousel.Caption>
-                    <h3 className="d-sm-none">Third slide label</h3>
-                    <p  className="d-sm-none">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <h3 className="d-sm-none d-lg-block">Third slide label</h3>
+                    <p  className="d-sm-none d-lg-block">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
