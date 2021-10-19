@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import './Footer.css';
 
 const Footer = () => {
@@ -7,8 +8,9 @@ const Footer = () => {
         <div className="d-flex justify-content-around text-light flex-wrap bg-dark py-5">
             <div className="p-3">
                 <h3>Quick Links</h3>
-                <p><Link>Home</Link></p>
-                <p><Link>Services</Link></p>
+                <p><Link to="/home">Home</Link></p>
+                <p><HashLink to="/home#services">Services</HashLink></p>
+                <p><Link to="/about">About</Link></p>
             </div>
             <div className="p-3">
                 <h3>Contact Info</h3>
