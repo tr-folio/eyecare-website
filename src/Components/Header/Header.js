@@ -1,8 +1,10 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { HashLink } from "react-router-hash-link";
+import useFirebase from "../../Hooks/useFirebase";
 
 const Header = () => {
+    const {user, logout} = useFirebase();
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
@@ -12,7 +14,8 @@ const Header = () => {
                     <Nav>
                         <Nav.Link as={HashLink} to="/home">Home</Nav.Link>
                         <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
-                        <Nav.Link as={HashLink} to="/login">Login</Nav.Link>
+                        {user.email && <button class="btn btn-primary" onClick={logout}>Logout {user.displayName}</button>} 
+                        {user.email || <Nav.Link as={HashLink} to="/login">Login</Nav.Link>}
                     </Nav>
                 </Navbar.Collapse>
             </Container>
