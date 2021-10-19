@@ -13,11 +13,11 @@
     height: 100%;
 }
 
-a {
+.btn a {
     text-decoration: none;
     color: white;
 }
 
-a:hover {
+.btn a:hover {
     color: skyblue;
 }

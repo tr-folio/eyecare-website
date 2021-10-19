@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const useFakeServiceDb = () => {
+const useFakeServicesDb = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
         fetch('./fakeServicesDb.json')
@@ -10,4 +10,4 @@ const useFakeServiceDb = () => {
     return services;
 }
 
-export default useFakeServiceDb;
+export default useFakeServicesDb;

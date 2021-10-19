@@ -8,3 +8,8 @@
 .icons:hover {
     color: lightgray;
 }
+
+.p-3 a {
+    text-decoration: none;
+    color: lightblue;
+}

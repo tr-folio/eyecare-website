@@ -4,12 +4,12 @@ import './Home.css';
 import img1 from "../../Images/img1.jpg";
 import img2 from "../../Images/img2.jpg";
 import img3 from "../../Images/img3.jpg";
-import useFakeServiceDb from "../../Hooks/useFakeServicesDb";
 import Service from "../Service/Service";
 import Footer from "../Footer/Footer";
+import useFakeServicesDb from "../../Hooks/useFakeServicesDb";
 
 const Home = () => {
-    const services = useFakeServiceDb([]);
+    const services = useFakeServicesDb([]);
     return (
         <>
             {/* Top Banner Section */}

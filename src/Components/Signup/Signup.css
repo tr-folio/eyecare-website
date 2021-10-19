@@ -1,0 +1,13 @@
+.signup-container {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+}
+
+a {
+    color: steelblue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
