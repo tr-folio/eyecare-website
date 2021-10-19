@@ -5,12 +5,12 @@ import './Footer.css';
 const Footer = () => {
     return (
         <div className="d-flex justify-content-around text-light flex-wrap bg-dark py-5">
-            <div>
+            <div className="p-3">
                 <h3>Quick Links</h3>
                 <p><Link>Home</Link></p>
                 <p><Link>Services</Link></p>
             </div>
-            <div>
+            <div className="p-3">
                 <h3>Contact Info</h3>
                 <p>Email: abc@example.com</p>
                 <p>Phone: 000-000000</p>
