@@ -1,0 +1,10 @@
+.icons {
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    color: skyblue;
+}
+
+.icons:hover {
+    color: lightgray;
+}
