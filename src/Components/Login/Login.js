@@ -1,18 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import useFirebase from "../../Hooks/useFirebase";
+import useAuth from "../../Hooks/useAuth";
 import './Login.css';
 
 const Login = () => {
-    const { signInUsingGoogle } = useFirebase();
+    const { signInUsingGoogle } = useAuth();
     return (
         <div className="login-container d-flex justify-content-center">
             <div className="pt-5">
                 <h1 className="pb-3">Please Login</h1>
                 <div>
                     <form>
-                        <p><input type="email" placeholder="Enter your email"/></p>
-                        <p><input type="password" placeholder="Enter your passowrd"/></p>
+                        <p><input type="text" placeholder="Enter your name" required/></p>
+                        <p><input type="email" placeholder="Enter your email" required/></p>
+                        <p><input type="password" placeholder="Enter your passowrd" required/></p>
                         <p><input type="submit" value="Submit" className="btn btn-primary"/></p>
                     </form>
                 </div>
