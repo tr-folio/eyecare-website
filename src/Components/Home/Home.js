@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <>
         <Carousel>
-            <Carousel.Item interval={1000}>
+            <Carousel.Item interval={2000}>
                 <img
                 className="d-block w-100 h-100"
                 src={img1}
@@ -23,7 +23,7 @@ const Home = () => {
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item interval={500}>
+            <Carousel.Item interval={2000}>
                 <img
                 className="d-block w-100"
                 src={img2}
@@ -34,7 +34,7 @@ const Home = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item interval={2000}>
                 <img
                 className="d-block w-100"
                 src={img3}
@@ -46,14 +46,18 @@ const Home = () => {
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
-        <div className="bg-light">
+        <div className="bg-light pt-5" id="services">
             <h1>Services</h1>
-            {
-                services.map(service => <Service 
-                    key={service.id}
-                    service={service}
-                ></Service>)
-            }
+            <div className="services-container">
+                <div className="all-services">
+                    {
+                        services.map(service => <Service 
+                            key={service.id}
+                            service={service}
+                        ></Service>)
+                    }
+                </div>
+            </div>
         </div>
         </>
     );
