@@ -4,9 +4,13 @@ import { Link, useLocation, useHistory } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 
 const Signup = () => {
+    let isSignedUp = false;
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const { signInUsingGoogle, signUpUsingEmailAndPassword } = useAuth();
+    const [error, setError] = useState('');
+    const [msg, setMsg] = useState('');
+    const { signInUsingGoogle, signUpUsingEmailAndPassword, signInUsingEmailAndPassword, user } = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirectUrl = location.state?.from || '/home';
@@ -17,6 +21,9 @@ const Signup = () => {
         })
     }
 
+    const handleNameInput = (event) => {
+        setName(event.target.value);
+    }
     const handleEmailInput = (event) => {
         setEmail(event.target.value);
     }
@@ -24,9 +31,21 @@ const Signup = () => {
         setPassword(event.target.value);
     }
 
+    // Email and Password Sign Up
     const handleSignUp = (event) => {
-        signUpUsingEmailAndPassword(email, password);
         event.preventDefault();
+        if (password.length < 6) {
+            setError('password cannot be less than 6 characters');
+        } else {
+            setError('');
+        }
+        isSignedUp = signUpUsingEmailAndPassword(email, password, name);
+        if (isSignedUp) {
+            setMsg('Successfully signed up. Please, login now.');
+        } else {
+            setMsg('');
+            setError('Sorry, signed up failed.');
+        }
     }
 
     return (
@@ -35,11 +54,14 @@ const Signup = () => {
                 <h1 className="pb-3">Please Signup</h1>
                 <div>
                     <form onSubmit={handleSignUp}>
+                        <p><input onBlur={handleNameInput} type="text" placeholder="Enter your name" required/></p>
                         <p><input onBlur={handleEmailInput} type="email" placeholder="Enter your email" required/></p>
                         <p><input onBlur={handlePasswordInput} type="password" placeholder="Enter your passowrd" required/></p>
                         <p><input type="submit" value="Submit" className="btn btn-primary"/></p>
                     </form>
                 </div>
+                <div className="text-danger">{error}</div>
+                <div className="text-success">{msg}</div>
                 <hr/>
                 <h3>Google Signup</h3>
                 <div>
