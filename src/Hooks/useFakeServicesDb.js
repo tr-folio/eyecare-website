@@ -7,17 +7,6 @@ const useFakeServicesDb = () => {
         .then(res => res.json())
         .then(data => setServices(data));
     }, []);
-    // useEffect(() => {
-    //     fetch('https://api.jsonbin.io/b/616f1bfaaa02be1d445bc859')
-    //     .then(res => res.json())
-    //     .then(data => setServices(data));
-    // }, []);
-    // const loadData = () => {
-    //     fetch('https://api.jsonbin.io/b/616f1bfaaa02be1d445bc859')
-    //     .then(res => res.json())
-    //     .then(data => setServices(data));
-    // }
-    // loadData();
     return services;
 }
 

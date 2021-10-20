@@ -1,8 +1,6 @@
 import { useParams } from "react-router";
-import { Link } from "react-router-dom";
 import useFakeServicesDb from "../../Hooks/useFakeServicesDb";
 import ConfirmVisit from "../ConfirmVisit/ConfirmVisit";
-import './ServiceDetail.css';
 
 const ServiceDetail = () => {
     const {id} = useParams();
@@ -10,7 +8,7 @@ const ServiceDetail = () => {
     const services = useFakeServicesDb();
     console.log(services);
     return (
-        <div className="service-detail">
+        <div>
             <ConfirmVisit id={id} services={services}></ConfirmVisit>
             
         </div>
