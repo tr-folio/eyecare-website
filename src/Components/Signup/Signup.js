@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import './Signup.css';
 import { Link, useLocation, useHistory } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 
 const Signup = () => {
-    const { signInUsingGoogle } = useAuth();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const { signInUsingGoogle, signUpUsingEmailAndPassword } = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirectUrl = location.state?.from || '/home';
@@ -14,15 +16,27 @@ const Signup = () => {
             history.push(redirectUrl);
         })
     }
+
+    const handleEmailInput = (event) => {
+        setEmail(event.target.value);
+    }
+    const handlePasswordInput = (event) => {
+        setPassword(event.target.value);
+    }
+
+    const handleSignUp = (event) => {
+        signUpUsingEmailAndPassword(email, password);
+        event.preventDefault();
+    }
+
     return (
         <div className="signup-container d-flex justify-content-center">
             <div className="pt-5">
                 <h1 className="pb-3">Please Signup</h1>
                 <div>
-                    <form>
-                        <p><input type="text" placeholder="Enter your name" required/></p>
-                        <p><input type="email" placeholder="Enter your email"/></p>
-                        <p><input type="password" placeholder="Enter your passowrd"/></p>
+                    <form onSubmit={handleSignUp}>
+                        <p><input onBlur={handleEmailInput} type="email" placeholder="Enter your email" required/></p>
+                        <p><input onBlur={handlePasswordInput} type="password" placeholder="Enter your passowrd" required/></p>
                         <p><input type="submit" value="Submit" className="btn btn-primary"/></p>
                     </form>
                 </div>
