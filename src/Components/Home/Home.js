@@ -10,7 +10,7 @@ import useFakeServicesDb from "../../Hooks/useFakeServicesDb";
 
 const Home = () => {
     const services = useFakeServicesDb();
-    console.log(typeof services);
+    // console.log(services);
     return (
         <>
             {/* Top Banner Section */}

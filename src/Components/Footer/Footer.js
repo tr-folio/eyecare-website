@@ -17,9 +17,9 @@ const Footer = () => {
                 <p>Email: abc@example.com</p>
                 <p>Phone: 000-000000</p>
                 <p>
-                    <i class="fab fa-facebook icons"></i>
-                    <i class="fab fa-twitter icons"></i>
-                    <i class="fab fa-instagram icons"></i>
+                    <i className="fab fa-twitter icons"></i>
+                    <i className="fab fa-facebook icons"></i>
+                    <i className="fab fa-instagram icons"></i>
                 </p>
             </div>
         </div>
