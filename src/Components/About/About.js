@@ -8,7 +8,7 @@ const About = () => {
         <div className="about-container bg-light">
             {/* about us banner */}
             <div className="about-banner d-flex justify-content-center align-items-center px-3">
-                <div className="banner-text">
+                <div className="banner-text mx-5">
                     <h1 className="px-3 pb-3">About <span className="text-info">Us</span></h1>
                     <h6 className="px-3">Welcome to our site. We are concern about your eye health. We provide eye treatment with careness and professional doctors with their technician teams are very qualified for ensuring modern eye treatment methods. If you have any vision problem, come to us immediately.</h6>
                 </div>
@@ -22,7 +22,7 @@ const About = () => {
 
             {/* our treatment procedure */}
             <div className="treatment-procedure pb-5">
-                <h1 className="ms-3 mb-3 px-5 py-3 bg-dark w-50 text-info">Our Treatment Procedure</h1>
+                <h1 className="ms-3 mb-3 px-5 py-3 bg-dark w-75 text-info">Our Treatment Procedure</h1>
                 <div className="procedures w-75 mx-auto p-3">
                     <ul>
                         <li>We have professional and experienced eye specialists.</li>
