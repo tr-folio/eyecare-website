@@ -4,6 +4,7 @@ import {
   Route
 } from 'react-router-dom';
 import './App.css';
+import About from './Components/About/About';
 import ConfirmVisit from './Components/ConfirmVisit/ConfirmVisit';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
@@ -24,6 +25,9 @@ function App() {
           <Switch>
             <Route path="/home">
               <Home></Home>
+            </Route>
+            <Route path="/about">
+              <About></About>
             </Route>
             <PrivateRoute path="/serviceDetail/:id">
               <ServiceDetail></ServiceDetail>
