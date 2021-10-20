@@ -12,6 +12,7 @@ import NotFound from './Components/NotFound/NotFound';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import ServiceDetail from './Components/ServiceDetail/ServiceDetail';
 import Signup from './Components/Signup/Signup';
+import VisitTime from './Components/VisitTime/VisitTime';
 import AuthProvider from './Context/AuthProvider';
 
 function App() {
@@ -29,6 +30,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path="/confirmVisit">
               <ConfirmVisit></ConfirmVisit>
+            </PrivateRoute>
+            <PrivateRoute path="/visitTime">
+              <VisitTime></VisitTime>
             </PrivateRoute>
             <Route path="/login">
               <Login></Login>

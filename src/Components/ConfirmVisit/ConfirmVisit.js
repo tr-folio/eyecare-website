@@ -26,7 +26,7 @@ const ConfirmVisit = (props) => {
                 </p>
                 <h3 className="px-2">{selectedService.servicename}</h3>
                 <p className="px-2 text-secondary">{selectedService.description}</p>
-                <p className="px-2"><button className="confirm-visit-btn bg-dark px-5 py-2"><Link to="/confirmVisit">Confirm Visit</Link></button></p>
+                <p className="px-2"><button className="confirm-visit-btn bg-dark px-5 py-2"><Link to="/visitTime">Confirm Visit</Link></button></p>
             </div>
         </div>
     );

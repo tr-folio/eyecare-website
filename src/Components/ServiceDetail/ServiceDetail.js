@@ -10,7 +10,6 @@ const ServiceDetail = () => {
     return (
         <div>
             <ConfirmVisit id={id} services={services}></ConfirmVisit>
-            
         </div>
     );
 }
