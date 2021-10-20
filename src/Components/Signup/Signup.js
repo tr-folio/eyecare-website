@@ -44,7 +44,6 @@ const Signup = () => {
             setMsg('Successfully signed up. Please, login now.');
         } else {
             setMsg('');
-            setError('Sorry, signed up failed.');
         }
     }
 
